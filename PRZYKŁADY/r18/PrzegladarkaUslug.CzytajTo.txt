@@ -1,0 +1,10 @@
+Dokument Czytaj.to dla aplikacji SerwerUslug
+
+Aby uruchomić tą aplikację będziesz potrzebował co najmniej trzech okienek wiersza poleceń
+(terminali). Uruchamiaj je w następującej kolejności:
+Pamiętaj, że przed uruchomieniem tej aplikacji należy wygenerować namiastkę oraz szkielet
+używając programu rmic - rmic SerwerUslugImpl
+
+1 - rmiregistry
+2 - java SerwerUslugImpl
+3 - java PrzegladarkaUslug
