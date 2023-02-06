@@ -1,5 +1,5 @@
-import java.util.*;
-class ArrayListMagnet {
+import java.util.ArrayList;
+public class ArrayListMagnet {
     public static void main(String[] args) {
         ArrayList<String> a = new ArrayList<>();
         a.add(0, "zero");
