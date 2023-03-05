@@ -20,10 +20,10 @@ public class ProstaAnimacja {
 		MojPanelRysunkowy panel = new MojPanelRysunkowy();
 		
 		ramka.getContentPane().add(panel);
-		ramka.setSize(300,300);
+		ramka.setSize(500,500);
 		ramka.setVisible(true);
 		
-		for (int i = 0; i < 130; i++) {
+		for (int i = 0; i < 300; i++) {
 			
 			x++;
 			y++;
@@ -31,7 +31,7 @@ public class ProstaAnimacja {
 			panel.repaint();
 			
 			try {
-				Thread.sleep(50);
+				Thread.sleep(2);
 			} catch (Exception ex) {}
 		}
 	}
@@ -39,11 +39,11 @@ public class ProstaAnimacja {
 	class MojPanelRysunkowy extends JPanel {
 		public void paintComponent (Graphics g) {
 			
-			g.setColor(Color.white);
+			g.setColor(Color.black);
 			g.fillRect(0,0,this.getWidth(), this.getHeight());
 			
-		g.setColor(Color.green);
-		g.fillOval(x,y,40,40);
+		g.setColor(Color.red);
+		g.fillOval(x,y,80,80);
 		}
 	}
 }
