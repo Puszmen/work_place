@@ -4,8 +4,14 @@ class MojeZadanie implements Runnable {
 		doDziela();
 	}
 	public void doDziela() {
-		kolejnaRobota();
+	try {
+		Thread.sleep(2000);
+	} catch (InterruptedException ex) {
+		ex.printStackTrace();
 	}
+	kolejnaRobota();
+	}
+	
 	public void kolejnaRobota() {
 		System.out.println("Wierzcholek stosu");
 	}
